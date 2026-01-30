@@ -1,4 +1,4 @@
-# Robot_Spindle_EndEffector_ABBRapidCode
+# Robot_CNC_Spindle_EndEffector_ABBRapidCode
 
 ## Project Summary:
 ABB RAPID code for testing and running a robot-mounted spindle end-effector to cut plywood sheets into predefined parts for BBQ wall manufacturing.
