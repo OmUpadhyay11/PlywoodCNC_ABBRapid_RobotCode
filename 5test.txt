@@ -1,0 +1,5 @@
+*** Status File - Not for use ***
+Files are saved to: C:\Users\Om Upadhyay\OneDrive - University of Waterloo\Documents\RoBIM Co-op Winter 2026\Spindle Programming\5test
+Main program: 5test.pgf
+  mAutodesk.mod
+  m2D_Contour71.mod

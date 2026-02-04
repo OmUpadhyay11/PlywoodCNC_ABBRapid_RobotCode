@@ -1,0 +1,8 @@
+*** Status File - Not for use ***
+Files are saved to: C:\Users\Om Upadhyay\OneDrive - University of Waterloo\Documents\RoBIM Co-op Winter 2026\Spindle Programming\redop5
+Main program: redop5.pgf
+  mAutodesk.mod
+  m2D_Contour56.mod
+  m2D_Contour57.mod
+  m2D_Contour58.mod
+  m2D_Contour59.mod
