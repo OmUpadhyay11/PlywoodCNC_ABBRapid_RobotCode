@@ -5,12 +5,30 @@
 
 MODULE m2D_Contour60
   PROC p2D_Contour60()
-    MoveAbsJ [[0,0,5,-70,40,70],[9E9,9E9,9E9,9E9,9E9,9E9]]\NoEOffs,v800,fine,tADSK27;
-    MoveL [[1873.65,-1062.772,16],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v800,z1,tADSK27\WObj:=wADSK0;
-    MoveL [[1873.65,-1062.772,6],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v800,z1,tADSK27\WObj:=wADSK0;
+
+  VAR num fk; 
+
+TPReadFK fk,"Please load 3 sheets of plywood...","Complete","","","","Stop";
+    
+    IF fk <> 1 THEN
+        Stop;
+    ENDIF
+
+    MoveAbsJ [[0,0,5,-70,40,70],[9E9,9E9,9E9,9E9,9E9,9E9]]\NoEOffs,v333,fine,tADSK27;
+    MoveL [[1873.65,-1062.772,16],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v333,z1,tADSK27\WObj:=wADSK0;
+    MoveL [[1873.65,-1062.772,6],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v333,z1,tADSK27\WObj:=wADSK0;
 
     ! Spindle ON
     ! setdo Local_IO_0_DO11, 1;
+
+
+
+    TPReadFK fk,"Make sure the spindle is running in the right rpm...","Confirm","","","","Stop";
+    
+    IF fk <> 1 THEN
+        Stop;
+    ENDIF
+
 
 
     ! Plunge Move Starts
@@ -51,6 +69,6 @@ MODULE m2D_Contour60
     MoveL [[1873.929,-1060.868,-10.246],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v75,z1,tADSK27\WObj:=wADSK0;
     MoveL [[1873.65,-1060.868,-9.573],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v75,z1,tADSK27\WObj:=wADSK0;
     ! Rapid Move Starts
-    MoveL [[1873.65,-1060.868,16],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v800,z1,tADSK27\WObj:=wADSK0;
+    MoveL [[1873.65,-1060.868,16],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v333,z1,tADSK27\WObj:=wADSK0;
   ENDPROC
 ENDMODULE

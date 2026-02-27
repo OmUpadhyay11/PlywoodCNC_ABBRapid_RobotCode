@@ -5,12 +5,30 @@
 
 MODULE m2D_Contour39
   PROC p2D_Contour39()
-    MoveAbsJ [[0,0,5,-70,40,70],[9E9,9E9,9E9,9E9,9E9,9E9]]\NoEOffs,v800,fine,tADSK27;
-    MoveL [[1859.03,-1134.843,16],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v800,z1,tADSK27\WObj:=wADSK0;
-    MoveL [[1859.03,-1134.843,6],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v800,z1,tADSK27\WObj:=wADSK0;
+
+  VAR num fk; 
+
+
+TPReadFK fk,"Please load 1 sheet of plywood...","Complete","","","","Stop";
+    
+    IF fk <> 1 THEN
+        Stop;
+    ENDIF
+
+
+    MoveAbsJ [[170, -20, 30, 00, 80, 0],[9E9,9E9,9E9,9E9,9E9,9E9]],v333,z1,tADSK27\WObj:=wADSK0;
+    MoveL [[1859.03,-1134.843,50],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v333,z1,tADSK27\WObj:=wADSK0;
+    MoveL [[1859.03,-1134.843,50],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v333,z1,tADSK27\WObj:=wADSK0;
 
     ! Spindle ON
     ! setdo Local_IO_0_DO11, 1;
+
+
+    TPReadFK fk,"Make sure the spindle is running in the right rpm...","Confirm","","","","Stop";
+    
+    IF fk <> 1 THEN
+        Stop;
+    ENDIF
 
     ! Plunge Move Starts
     MoveL [[1859.03,-1134.843,2],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v25,z1,tADSK27\WObj:=wADSK0;
@@ -47,8 +65,8 @@ MODULE m2D_Contour39
     MoveL [[1860.935,-1132.938,-10.525],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v75,z1,tADSK27\WObj:=wADSK0;
     MoveL [[1859.983,-1132.938,-10.525],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v75,z1,tADSK27\WObj:=wADSK0;
     MoveL [[1859.309,-1132.938,-10.246],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v75,z1,tADSK27\WObj:=wADSK0;
-    MoveL [[1859.03,-1132.938,-9.573],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v75,z1,tADSK27\WObj:=wADSK0;
+    MoveL [[1859.03,-1132.938,50],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v75,z1,tADSK27\WObj:=wADSK0;
     ! Rapid Move Starts
-    MoveL [[1859.03,-1132.938,16],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v800,z1,tADSK27\WObj:=wADSK0;
+    MoveL [[1859.03,-1132.938,50],[0,-0.25881905,0.96592583,0],[0,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]],v333,z1,tADSK27\WObj:=wADSK0;
   ENDPROC
 ENDMODULE
