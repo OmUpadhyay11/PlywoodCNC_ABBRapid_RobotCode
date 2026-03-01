@@ -6,7 +6,9 @@
 MODULE m2D_Contour37
   PROC p2D_Contour37()
 
-VAR num fk; 
+VAR num fk;
+
+TPErase;
 
 
 TPReadFK fk,"Please load 1 sheet of plywood...","Complete","","","","Stop";

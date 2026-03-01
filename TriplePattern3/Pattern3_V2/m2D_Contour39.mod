@@ -8,6 +8,8 @@ MODULE m2D_Contour39
 
   VAR num fk; 
 
+  TPErase;
+
 
 TPReadFK fk,"Please load 1 sheet of plywood...","Complete","","","","Stop";
     

@@ -9,6 +9,9 @@ MODULE m2D_Contour37
 
 VAR num fk; 
 
+TPErase;
+
+
 TPReadFK fk,"Please load 2 sheets of plywood...","Complete","","","","Stop";
     
     IF fk <> 1 THEN
