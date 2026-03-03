@@ -11,7 +11,7 @@ VAR num fk;
 
 TPErase;
     
-    TPReadFK fk,"Please load 1 sheet of plywood...","Complete","","","","Stop";
+    TPReadFK fk,"Please load 3 sheets of plywood...","Complete","","","","Stop";
     
     IF fk <> 1 THEN
         Stop;

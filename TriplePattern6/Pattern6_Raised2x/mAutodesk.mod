@@ -9,7 +9,7 @@ MODULE mAUTODESK
   PERS tooldata tADSK27:=[TRUE,[[-244.6702,-1.320775,239.6506],[0.7071068,0,-0.707168,0]],[40,[50,0,120],[1,0,0,0],0,0,0]];
 
   PERS speeddata v75:=[75,500,5000,1000];
-  PERS speeddata v333:=[800,500,5000,1000];
+  PERS speeddata v333:=[333,500,5000,1000];
   PERS speeddata v25:=[25,500,5000,1000];
 
   PROC main()
